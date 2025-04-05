@@ -7,7 +7,7 @@ type TestConfigProps = {
 };
 
 const TestConfig = ({ onStart }: TestConfigProps) => {
-  const [duration, setDuration] = useState(60);
+  const [duration, setDuration] = useState(15);
   return (
     <section className="flex flex-col gap-4 items-center">
       <label className="flex flex-col items-center">
@@ -17,9 +17,9 @@ const TestConfig = ({ onStart }: TestConfigProps) => {
           onChange={(e) => setDuration(Number(e.target.value))}
           className="bg-black border border-purple-500 text-white px-3 py-2 rounded"
         >
-          <option value={30}>30</option>
-          <option value={60}>60</option>
-          <option value={90}>90</option>
+          <option value={30}>15</option>
+          <option value={60}>30</option>
+          <option value={90}>60</option>
         </select>
       </label>
 

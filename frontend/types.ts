@@ -1,4 +1,4 @@
-type WordStatus = 'pending' | 'correct' | 'incorrect'
+export type WordStatus = 'pending' | 'correct' | 'incorrect'
 
 export type TestState = {
   words: string[];
