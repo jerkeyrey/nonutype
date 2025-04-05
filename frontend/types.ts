@@ -1,3 +1,5 @@
+type WordStatus = 'pending' | 'correct' | 'incorrect'
+
 export type TestState = {
   words: string[];
   currentWordIndex: number;
@@ -5,5 +7,6 @@ export type TestState = {
   incorrectWords: number;
   input: string;
   startTime: number | null;
+  WordStatus: WordStatus[];
 
 }
